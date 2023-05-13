@@ -53,20 +53,23 @@ li a:hover::after {
 
 /* Imagem */
 .image-container {
+    position: relative;
     display: inline-block;
-    padding: 10px;
-    border: 2px solid #272d50;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
+  }
 
-.my-image {
+  .image-container:hover .my-image {
+    transform: scale(1.03);
+  }
+
+  .my-image {
     display: block;
-    width: 400px;
-    height: 400px;
     object-fit: cover;
+    transition: transform 0.6s ease;
     border-radius: 8px;
-}
+  }
 
 /* Texto Sobre mim */
 .styled-div {
@@ -88,4 +91,3 @@ p {
     color: #cbd6fc;
     font-size: 16px;
 }
-
