@@ -83,6 +83,7 @@ hr {
     justify-content: center;
     margin-top: 3%;
 }
+
 .text-apresentacao h1 {
     font-size: 32px;
     font-weight: bold;
@@ -96,8 +97,13 @@ hr {
 }
 
 .text-apresentacao a {
+    transition: color 0.3s;
     color: #5b6ccf;
     text-decoration: none;
+}
+
+.text-apresentacao a:hover {
+    color: #2b45d8;
 }
 
 .text-apresentacao h1:first-child {
@@ -144,8 +150,8 @@ hr {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-left: 10%;
-    margin-top: 3%;
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
 .styled-div, h2 {
