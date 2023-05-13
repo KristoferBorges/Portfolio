@@ -70,10 +70,10 @@ body {
 /* HR */
 
 hr {
-    border: none; /* remove a borda padrão */
-    height: 2px; /* define a altura da linha */
-    background-color: #272d50; /* define a cor de fundo */
-    margin: 20px 0; /* define as margens superior e inferior */
+    border: none; 
+    height: 2px; 
+    background-color: #272d50; 
+    margin: 20px 0; 
   }
 
 /* Apresentação */
@@ -90,7 +90,16 @@ hr {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
 }
-  
+
+.text-apresentacao p {
+    margin-left: 3%;
+}
+
+.text-apresentacao a {
+    color: #5b6ccf;
+    text-decoration: none;
+}
+
 .text-apresentacao h1:first-child {
     margin-bottom: 10px;
 }
@@ -98,6 +107,8 @@ hr {
 .text-apresentacao h1:last-child {
     margin-top: 10px;
 }
+
+
 
 .image-apresentacao img {
     background-image: linear-gradient(to bottom right, #9ec8cf, #ffffff);
