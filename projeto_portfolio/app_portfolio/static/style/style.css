@@ -6,27 +6,26 @@ body {
     font-family: Arial, Verdana;
 }
 
-.nav-bar, nav {
+.nav-bar {
     background-color: #b6b8c2;
     padding: 10px;
     font-family: Verdana, Arial;
 }
 
-.nav-bar, ul {
+.nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
 
-.nav-bar, li {
+.nav-bar li {
     display: inline;
     margin: 0 10px;
 }
 
-.nav-bar, li a {
+.nav-bar li a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -35,7 +34,7 @@ body {
     transition: color 0.6s;
 }
 
-.nav-bar, li a::after {
+.nav-bar li a::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -47,23 +46,24 @@ body {
     transition: transform 0.6s;
 }
 
-.nav-bar, li a:hover {
+.nav-bar li a:hover {
     color: #ff6347;
+    cursor: pointer;
 }
 
-.nav-bar, li a:hover::after {
+.nav-bar li a:hover::after {
     transform: scaleX(1);
 }
 
 /* Media Query para dispositivos móveis */
 @media screen and (max-width: 680px) {
-    .nav-bar, nav, ul {
-      flex-direction: column;
-      gap: 10px;
+    nav ul {
+      text-align: center;
+      justify-content: center;
     }
 
-    .nav-bar, nav, li {
-      font-size: 16px;
+    nav li {
+      font-size: 13px;
     }
 }
 
@@ -114,6 +114,17 @@ hr {
     transform: scale(1.02);
     background-image: url('https://i.imgur.com/EV3sXYq.png');
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 680px) {
+    .container-apresentacao{
+        display: block;
+    }
+    .text-apresentacao{
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* Texto Sobre mim */
