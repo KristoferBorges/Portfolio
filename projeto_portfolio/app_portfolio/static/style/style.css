@@ -104,6 +104,7 @@ hr {
 
 .text-apresentacao a:hover {
     color: #2b45d8;
+    cursor: pointer; 
 }
 
 .text-apresentacao h1:first-child {
