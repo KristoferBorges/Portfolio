@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #272d50, #b6b8c2);
+    background-repeat: no-repeat;
+    background-size: 100vw 300vh;
+    margin: 0;
+    font-family: Arial, Verdana;
+}
+
+.nav-bar {
+    background-color: #b6b8c2;
+    padding: 10px;
+    font-family: Verdana, Arial;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-bar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #251a1a;
+    position: relative;
+    transition: color 0.6s;
+}
+
+.nav-bar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.6s;
+}
+
+.nav-bar li a:hover {
+    color: #ff6347;
+    cursor: pointer;
+}
+
+.nav-bar li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 680px) {
+    nav ul {
+      text-align: center;
+      justify-content: center;
+    }
+
+    nav li {
+      font-size: 13px;
+    }
+}
+
+/* HR */
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #272d50; 
+    margin: 20px 0; 
+  }
+
+/* Apresentação */
+
+.container-apresentacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.text-apresentacao h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5b6ccf;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+}
+
+.text-apresentacao p {
+    margin-left: 3%;
+}
+
+.text-apresentacao a {
+    transition: color 0.3s;
+    color: #5b6ccf;
+    text-decoration: none;
+}
+
+.text-apresentacao a:hover {
+    color: #2b45d8;
+    cursor: pointer; 
+}
+
+.text-apresentacao h1:first-child {
+    margin-bottom: 10px;
+}
+  
+.text-apresentacao h1:last-child {
+    margin-top: 10px;
+}
+
+
+
+.image-apresentacao img {
+    background-image: linear-gradient(to bottom right, #9ec8cf, #ffffff);
+    width: 70%;
+    border: 2px solid #272d50;
+    border-radius: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    transition: background-image 0.3s ease;
+    margin-left: 10%;
+    transition: transform 0.3s ease;
+}
+  
+.image-apresentacao img:hover {
+    transform: scale(1.02);
+    background-image: url('https://i.imgur.com/EV3sXYq.png');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 680px) {
+    .container-apresentacao{
+        display: block;
+    }
+    .text-apresentacao{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Texto Sobre mim */
+.styled-div {
+    color: #b6b8c2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.styled-div, h2 {
+    color: #516fc4;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.styled-div, p {
+    color: #cbd6fc;
+    font-size: 17px;
+}
+
+/* Imagem */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover .my-image {
+    transform: scale(1.03);
+}
+
+.my-image {
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 8px;
+}
