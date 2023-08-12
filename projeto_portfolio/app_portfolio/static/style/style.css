@@ -183,7 +183,7 @@ hr {
     transform: scale(1.03);
 }
 
-.my-image {
+#my-image {
     display: block;
     object-fit: cover;
     transition: transform 0.6s ease;
