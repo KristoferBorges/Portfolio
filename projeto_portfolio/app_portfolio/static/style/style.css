@@ -86,7 +86,11 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: 3%;
-    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.text-apresentacao{
+    margin-top: 3%;
 }
 
 .text-apresentacao h1 {
@@ -95,6 +99,7 @@ hr {
     color: #5b6ccf;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
+    
 }
 
 .text-apresentacao p {
@@ -120,22 +125,22 @@ hr {
     margin-top: 10px;
 }
 
-
-
 .image-apresentacao img {
+    display: block;
     background-image: linear-gradient(to bottom right, #9ec8cf, #ffffff);
     width: 70%;
     border: 2px solid #272d50;
-    border-radius: 100%;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     transition: background-image 0.3s ease;
     margin-left: 10%;
-    transition: transform 0.3s ease;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 100%;
 }
   
 .image-apresentacao img:hover {
+    background-image: url(https://media1.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif?cid=ecf05e472c04gwhzn761p128umd7jkf52vfshuw7vwd0xxj3&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     transform: scale(1.02);
-    background-image: url('https://i.imgur.com/EV3sXYq.png');
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,13 +185,3 @@ hr {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.image-container:hover .my-image {
-    transform: scale(1.03);
-}
-
-#my-image {
-    display: block;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-    border-radius: 8px;
-}
