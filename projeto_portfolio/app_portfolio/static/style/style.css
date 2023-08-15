@@ -176,12 +176,59 @@ hr {
     font-size: 17px;
 }
 
-/* Imagem */
 .image-container {
+    height: 630px;
     position: relative;
     display: inline-block;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s;
 }
 
+.image-container:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#my-projects {
+    font-size: 36px; 
+    color: #5b6ccf;
+    text-align: center; 
+    margin-top: 60px; 
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    font-weight: bold; 
+    font-family: Verdana, Arial;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 70px;
+}
+
+.project {
+    background-color: #5462b1; 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    margin: 30px;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+  
+.project h2 {
+    font-size: 24px;
+    color: #ffffff; 
+}
+  
+.project p {
+    font-size: 16px; 
+}
+  
+.project a {
+    display: block;
+    text-align: right; 
+    color: #ffffff; 
+    text-decoration: none;
+}
+  
