@@ -86,6 +86,7 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    margin-top: 50px;
 }
 
 .text-apresentacao h1 {
