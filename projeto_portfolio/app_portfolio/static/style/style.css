@@ -193,7 +193,7 @@ hr {
 
 #my-projects {
     font-size: 36px; 
-    color: #5b6ccf;
+    color: #6b7ff1;
     text-align: center; 
     margin-top: 60px; 
     text-transform: uppercase; 
@@ -231,4 +231,8 @@ hr {
     color: #ffffff; 
     text-decoration: none;
 }
-  
+
+.project .arrow {
+    margin-left: 5px; /* Espaçamento entre "Ver mais" e a seta */
+    font-size: 14px; /* Tamanho da fonte da seta */
+}
