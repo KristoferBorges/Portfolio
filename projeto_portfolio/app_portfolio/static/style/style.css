@@ -13,7 +13,11 @@ body {
 .nav-bar {
     background-color: #b6b8c2;
     padding: 10px;
+    width: 100%;
     font-family: Verdana, Arial;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
 
 .nav-bar ul {
