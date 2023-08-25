@@ -5,16 +5,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <title>Portfólio - Kristofer Borges</title>
         <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="caminho-para-o-seu-arquivo/download.js"></script>
     </head>
     <body>
         <nav class="nav-bar">
             <ul>
-              <li><a href="#sobre">Sobre mim</a></li>
+              <li><a href="#title-sobre">Sobre mim</a></li>
               <li><a href="#historia">Minha história</a></li>
               <li><a href="#conhecimento">Meus Conhecimento</a></li>
-              <li><a href="#my-projects">Projetos</a></li>
+              <li><a href="#title-projects">Projetos</a></li>
               <li><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
@@ -23,11 +25,13 @@
                 <h1>Bem-vindo(a) ao meu Portfólio</h1>
                 <hr>
                 <h1>Networking</h1>
-                <p>► GitHub - <a href="https://github.com/KristoferBorges">Clique aqui para acessar</a></p>
-                <p>► LinkedIn - <a href="https://www.linkedin.com/in/kristofer-borges/">Clique aqui para acessar</a></p>
-                <p>► Facebook - <a href="https://www.facebook.com/KristoferDeSouzaBorges/">Clique aqui para acessar</a></p>
-                <p>► Instagram - <a href="https://www.instagram.com/kristoferborges/">Clique aqui para acessar</a></p>
-                <p>► Currículo - <a href="https://drive.google.com/uc?export=download&id=1OUn69RpTW2glUy5GQ6acKWt2C-KHM5j2" target="_blank">Clique aqui para baixar</a>
+                <div id="links-networking">
+                    <a href="https://github.com/KristoferBorges" target="_blank"><i class="fab fa-github" style="color: #5180d2;"></i></a>
+                    <a href="https://www.linkedin.com/in/kristofer-borges/"><i class="fab fa-linkedin-in" style="color: #5180d2;"></i></a>
+                    <a href="https://www.instagram.com/kristoferborges/"><i class="fab fa-instagram" style="color: #5180d2;"></i></a>
+                    <a href="https://www.facebook.com/KristoferDeSouzaBorges/"><i class="fab fa-facebook-f" style="color: #5180d2;"></i></a>
+                </div>
+                <button id="button-cv">Download CV</button>
                 <hr>
                 <a href="https://api.whatsapp.com/send?phone=5511971333037" class="whatsapp-button" target="_blank">
                     <span class="whatsapp-icon"></span>
@@ -38,27 +42,52 @@
                 <img id="my-image" src="https://i.imgur.com/6P7gT5t.png" alt="Minha imagem">
             </div>
         </div>
-        <div class="styled-div">
-            <h2 id="sobre">Sobre mim</h2>
+        
+        <h1 id="title-sobre">Sobre mim</h1>
+        <div id="about-me">
             <p>
-                Me chamo Kristofer, tenho 22 anos, minha vida gira em torno do consumo de tecnologia, que utilizo diariamente de diversas maneiras.
-                Quando percebi o quanto realmente gostava de usá-la, questionei a mim mesmo: por que não criar tecnologia? Desde então, tenho a certeza de que minha profissão deve estar intrinsecamente ligada a esse assunto.
+                Me chamo <strong>Kristofer Borges</strong>, tenho 22 anos e atualmente estou em busca da minha primeira oportunidade como <strong>desenvolvedor</strong>.
+                <a id="link-historia" href="#historia">Veja minha história</a>
             </p>
-            <p>
-                Estou prestes a me formar em Análise e Desenvolvimento de Sistemas, praticando diariamente o aprimoramento do meu inglês e minhas habilidades de programação.
-                Minha boa criatividade se desenvolveu enquanto aprendia a lógica por trás da programação, e agora a utilizo para criar projetos e scripts que me auxiliem de variadas maneiras. Tenho uma afinidade maior com a área de Back-End, pois é lá que a magia realmente acontece.
-            </p>
-            <p>
-                No momento, estou em busca da minha primeira oportunidade de emprego.
-                Já se passou quase um ano desde que comecei minha busca, porém ainda não encontrei a vaga ideal.
-                Cheguei até a considerar começar algo por conta própria, pois não gosto de depender dos outros. No entanto, ainda desejo trabalhar em um ambiente colaborativo e empresarial.
-            </p>
-            <div class="image-container">
-                <img class="my-image" src="https://i.imgur.com/tBDGcfP.png" alt="Minha imagem">
+        </div>
+        <div id="habilidades-certificacoes">
+            <div id="habilidades">
+                <h3>Habilidades</h3>
+                <hr>
+                <h1 id="sub-title">Linguagens</h1>
+                <h4>✦ Python<span>(Avançado)</span></h4>
+                <h4>✦ C#<span>(Intermediário)</span></h4>
+                <h4>✦ C++<span>(Básico)</span></h4>
+                <h4>✦ JavaScript<span>(Básico)</span></h4>
+                <h1 id="sub-title">Frameworks</h1>
+                <h4>✦ Kivy<span>(Intermediário)</span></h4>
+                <h4>✦ Django<span>(Básico)</span></h4>
+                <h4>✦ Angular<span>(Básico)</span></h4>
+                <h1 id="sub-title">Bibliotecas</h1>
+                <h4>✦ Pandas<span>(Intermediário)</span></h4>
+                <h4>✦ Pygame<span>(Básico)</span></h4>
+            </div>
+            <div id="certificacoes">
+                <h3>Certificações</h3>
+                <hr>
+                <h1 id="sub-title">Curso em Vídeo</h1>
+                <h4>✦ Python Mundo 1 ✦</h4>
+                <h4>✦ Python Mundo 2 ✦</h4>
+                <h4>✦ Python Mundo 3 ✦</h4>
+                <h4>✦ MySQL ✦</h4>
+                <h4>✦ Linux ✦</h4>
+                <h1 id="sub-title">Fundação Bradesco</h1>
+                <h4>✦ Lógica de Programação ✦</h4>
+                <h4>✦ Linguagem C# (Básico)✦</h4>
+                <h4>✦ Linguagem C# (Avançado)✦</h4>
+                <h4>✦ Introdução ao Python ✦</h4>
+                <h4>✦ HTML5 ✦</h4>
+                <h4>✦ Inovando com CSS ✦</h4>
+                
             </div>
         </div>
 
-        <h1 id="my-projects">Meus Projetos</h1>
+        <h1 id="title-projects">Meus Projetos</h1>
         
         <div id="project-list">
             <section class="project">
@@ -109,38 +138,14 @@
                     <span class="github-icon"></span>
                     GitHub
                 </a>  
-            </section>
-
-            <section class="project">
-                <h2>EM DESENVOLVIMENTO</h2>
-                <p class="description-text"></p>
-                <div id="project-img">
-                    <img src="">
-                    <img src="">                   
-                </div>
-                <a href="https://github.com/KristoferBorges/Back-End-PowerGame" class="project-button" target="_blank">
-                    <span class="github-icon"></span>
-                    GitHub
-                </a>  
-            </section>
-
-            <section class="project">
-                <h2>EM DESENVOLVIMENTO</h2>
-                <p class="description-text"></p>
-                <div id="project-img">
-                    <img src="">
-                    <img src="">                   
-                </div>
-                <a href="https://github.com/KristoferBorges/Back-End-PowerGame" class="project-button" target="_blank">
-                    <span class="github-icon"></span>
-                    GitHub
-                </a>  
-            </section>
-            
         </div>
 
         <footer class="footer">
             <div class="footer-content">
+                <a href="https://api.whatsapp.com/send?phone=5511971333037" class="whatsapp-button" target="_blank">
+                    <span class="whatsapp-icon"></span>
+                    Entrar em Contato pelo WhatsApp
+                </a> 
                 <h1>Kristofer Borges</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
