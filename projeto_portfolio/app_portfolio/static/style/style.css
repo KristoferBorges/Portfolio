@@ -10,6 +10,8 @@ body {
     font-family: Arial, Verdana;
 }
 
+/* Navbar */
+
 .nav-bar {
     background-color: #7381c5;
     padding: 10px;
@@ -216,7 +218,6 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: 3%;
-    padding-bottom: 5%;
     color: #ffffff;
 }
 
@@ -226,10 +227,14 @@ hr {
 }
 
 #link-historia{
+    display: block; /* Garante que o link ocupa a largura total disponível */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do link */
+    margin: 10px auto;
+    margin-bottom: 35px;
+    width: 200px;
     text-decoration: none;
     color: #2b45d8;
     padding: 10px 20px;
-    margin-left: 10px;
     border-radius: 10px;
     border: 1px solid #2b45d8;
     background-color: transparent;
@@ -265,7 +270,7 @@ hr {
 
 #habilidades{
     background-color: #4d5169;
-    height: 800px;
+    height: 880px;
     width: 340px;
     border-radius: 10px;
     transition: transform 0.2s;
@@ -282,7 +287,7 @@ hr {
 
 #certificacoes{
     background-color: #4d5169;
-    height: 800px;
+    height: 880px;
     width: 340px;
     border-radius: 10px;
     transition: transform 0.2s;
@@ -339,6 +344,8 @@ hr {
     padding-left: 10px;
     color: #a2a8cc;
 }
+
+/* Projetos */
 
 #title-projects {
     font-size: 36px; 
@@ -454,6 +461,8 @@ hr {
     vertical-align: middle;
 }
 
+/* Footer */
+
 .footer {
     background-color: #2b398a;
     color: #fff;
@@ -497,4 +506,88 @@ hr {
 
 .footer li:last-child {
     margin-bottom: 0;
+}
+
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        position: relative;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-bar li {
+        margin: 5px 0;
+    }
+
+    #links-networking{
+        justify-content: center;
+    }
+
+    .whatsapp-button{
+        margin-top: 5%;
+    }
+
+    .text-apresentacao {
+        margin-top: 10%;
+    }
+
+    .image-apresentacao{
+        align-items: center;
+    }
+
+    .image-apresentacao img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #my-image{
+        margin-top: 10%;
+    }
+
+    #about-me{
+        text-align: center;
+    }
+
+    #habilidades-certificacoes {
+        flex-direction: column;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    #habilidades,
+    #certificacoes {
+        width: 70%;
+        margin: 10px 0;
+        margin-bottom: 5%;
+    }
+
+    .project {
+        width: 60%;
+        margin: 10px;
+        margin-bottom: 5%;
+    }
+
+    #project-img img{
+        margin: 0 auto;
+        width: 44%;
+    }
+
+    #project-img_cadastro img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #project-img_solo img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
 }
