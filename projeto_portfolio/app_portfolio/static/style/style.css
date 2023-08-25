@@ -416,7 +416,7 @@ hr {
 #project-img img{
     justify-content: space-between;
     width: 40%;
-    margin-left: 5px;
+    margin: 0 auto;
     border-radius: 10px;
     border: 1px solid;
 }
@@ -428,6 +428,8 @@ hr {
 }
 
 #project-img_solo img{
+    display: block;
+    margin: 0 auto;
     width: 70%;
     border-radius: 10px;
     border: 1px solid;
