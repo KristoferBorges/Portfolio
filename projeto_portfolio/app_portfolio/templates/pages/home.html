@@ -1,25 +1,12 @@
+{% extends 'base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en"></html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <title>Portfólio - Kristofer Borges</title>
-        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src="../../static/scripts/download.js"></script>
-    </head>
-    <body>
-        <!--  Navbar  -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-              <li><a href="#title-sobre">Sobre mim</a></li>
-              <li><a href="#historia">Minha história</a></li>
-              <li><a href="#title-projects">Projetos</a></li>
-            </ul>
-        </nav>
+
+{% block extra_styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}">
+{% endblock %}
+
+{% block content %}
         <!--  Apresentação  -->
         <div class="container-apresentacao">
             <div class="text-apresentacao">
@@ -139,21 +126,4 @@
                 </a>
             </section>
         </div>
-        <!--  Footer  -->
-        <footer class="footer">
-            <div class="footer-content">
-                <a href="https://api.whatsapp.com/send?phone=5511971333037" class="whatsapp-button" target="_blank">
-                    <span class="whatsapp-icon"></span>
-                    Entrar em Contato pelo WhatsApp
-                </a> 
-                <h1>Kristofer Borges</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <hr>
-                    <li>Kristofer Borges © 2023</li>
-                </ul>
-            </div>
-        </footer>
-        <script src="{% static 'scripts/script.js' %}"></script>
-    </body>
-</html>
+{% endblock %}
