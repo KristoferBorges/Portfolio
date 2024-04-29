@@ -359,6 +359,14 @@ hr {
     border: 1px solid;
 }
 
+#project-img_crud img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
 #project-img_portfolio img{
     display: block;
     margin: 0 auto;
