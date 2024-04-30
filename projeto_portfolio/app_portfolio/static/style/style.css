@@ -92,11 +92,11 @@ hr {
 .image-apresentacao img {
     display: block;
     background-image: linear-gradient(to bottom right, #252a2b, #6e6767);
-    width: 70%;
+    width: 80%;
     border: 2px solid #272d50;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     transition: background-image 0.3s ease;
-    margin-left: 10%;
+    margin-left: 40%;
     object-fit: cover;
     transition: transform 0.6s ease;
     border-radius: 100%;
