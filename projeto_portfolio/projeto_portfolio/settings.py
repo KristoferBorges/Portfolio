@@ -124,8 +124,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'app_portfolio/static')
 ]
 
-SECURE_SSL_REDIRECT = True
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
