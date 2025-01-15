@@ -345,6 +345,10 @@ hr {
     display: flex;
 }
 
+#project_img_chat-translate img{
+    width: 40%;
+}
+
 #project-img img{
     justify-content: space-between;
     width: 40%;

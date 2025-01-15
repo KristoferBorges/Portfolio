@@ -153,6 +153,10 @@ hr {
     color: #ffffff;
 }
 
+#about-me p {
+    text-align: center;
+}
+
 #about-me strong:hover{
     color: #25d366;
     cursor: pointer;
@@ -338,11 +342,23 @@ hr {
 .description-text{
     color: #ffffff;
     font-size: 13px;
-    text-decoration-line: underline;
+    text-decoration-line: none;
+}
+
+.description-text span{
+    color: #000000;
 }
 
 #project-img{
     display: flex;
+}
+
+#project_img_chat-translate img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid;
 }
 
 #project-img img{
