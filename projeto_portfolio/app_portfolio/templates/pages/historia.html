@@ -3,53 +3,81 @@
 {% load static %}
 
 {% block extra_styles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static 'style/historia.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/historia.css'%}">
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div id="text-historia">
-            <h1>Minha História</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
+    <div id="container-apresentacao">
+        <h1 id="title-historia">MINHA TRAJETÓRIA</h1>
+        <div class="division_read">
+            <div class="division_read_right">
+                <p>
+                    Minha jornada na programação começou cedo, por volta dos 12 anos. 
+                    Com muita determinação, consegui convencer minha mãe a investir 
+                    em um curso de programação. Foi ali que adquiri as primeiras noções 
+                    de HTML e CSS, mas naquela época, isso não era o suficiente para conseguir 
+                    uma vaga de emprego. Além disso, eu não sabia nem por onde começar. 
+                    Com o tempo, as pressões da vida me fizeram deixar a programação de 
+                    lado, enquanto buscava uma forma de ganhar dinheiro.
+                </p>
+            </div>
+            <div class="division_read_left">
+                <img src="https://i.ibb.co/z5V79BR/image-1.png" alt="Imagem Representativa">
+            </div>
+        </div>
+        
+        <!-- Nova divisão com conteúdo invertido -->
+        <div class="division_read">
+            <div class="division_read_left">
+                <img src="https://i.ibb.co/QMmfy4W/image.png" alt="Outra Imagem Representativa">
+            </div>
+            <div class="division_read_right">
+                <p>
+                    Entrei para uma empresa de telemarketing, onde permaneci por três anos. 
+                    Porém, percebi que minha evolução havia estagnado, e decidi que era hora 
+                    de mudar de direção. Foi então que escolhi cursar Análise e Desenvolvimento 
+                    de Sistemas. Durante esse período, percebi que o trabalho consumia muito do 
+                    meu tempo e decidi investir em minha educação de forma mais focada. Decidi 
+                    juntar dinheiro e deixar o emprego para me dedicar exclusivamente aos estudos. 
+                    Também me aventurei em dropshipping, acreditando que seria uma forma fácil e 
+                    rentável de ganhar dinheiro. No entanto, o investimento não teve o retorno esperado 
+                    e isso me levou a focar inteiramente nos estudos.
+                </p>
+            </div>
+        </div>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
+        <!-- Nova divisão com conteúdo invertido -->
+        <div class="division_read">
+            <div class="division_read_right">
+                <p>
+                    Como não havia dinheiro suficiente para pagar a faculdade, comecei a realizar trabalhos 
+                    acadêmicos para outros alunos, o que me permitiu quitar as mensalidades e, finalmente, me formar.
+                    Após a faculdade, continuei trabalhando com os mesmos serviços de freelancing enquanto buscava 
+                    uma oportunidade na área de TI. Durante esse período, consegui aprimorar ainda mais minhas 
+                    habilidades. Desenvolvi um sistema para terceirizar os trabalhos acadêmicos, criei um banco 
+                    de dados para me organizar e expandi a minha base de clientes. Esse esforço me ajudou a aumentar 
+                    minha produtividade de forma significativa.
+                </p>
+            </div>
+            <div class="division_read_left">
+                <img src="https://scontent.fcgh13-1.fna.fbcdn.net/v/t39.30808-6/338694794_601873468218628_2080251956381359545_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHYkhEdNZmYq9ieI20kCnYsX7ozcsyb_C5fujNyzJv8LlqX7IGHerzXuFg3La2lkVQ8z_zH3SVgUOKqDCqQLGGc&_nc_ohc=MRQ-y-I05CUQ7kNvgEsYsQ2&_nc_zt=23&_nc_ht=scontent.fcgh13-1.fna&_nc_gid=AvjCkC8cZWJL-EbgfRE4PZy&oh=00_AYDBG4aiUuLDAy-Q5vc1cgmy_LXzQxfs1R8YmXegXwQ38w&oe=678E379F" alt="Imagem Representativa">
+            </div>
+        </div>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate fringilla magna, in volutpat tellus rhoncus in. Donec sodales, velit 
-                sit amet tincidunt laoreet, justo nunc bibendum sem, nec posuere odio purus at justo. Ut id congue metus, eu iaculis eros. Nullam gravida efficitur 
-                arcu, vel dignissim tellus sollicitudin eget. Pellentesque quis mi eget turpis auctor lacinia et in quam. Vestibulum rhoncus odio nec elit blandit 
-                egestas.
-            </p>
+        <!-- Nova divisão com conteúdo invertido -->
+        <div class="division_read">
+            <div class="division_read_left">
+                <img src="https://i.ibb.co/0tf8zZC/image.png" alt="Outra Imagem Representativa">
+            </div>
+            <div class="division_read_right">
+                <p>
+                    Hoje, estou financeiramente mais estável e com uma mentalidade mais sólida, pronto para 
+                    abraçar novos desafios. Sigo em busca de uma oportunidade na área de Desenvolvimento de 
+                    Software e Análise de Dados, com o objetivo de aplicar todo o aprendizado adquirido ao 
+                    longo dessa trajetória.
+                </p>
+            </div>
         </div>
     </div>
 {% endblock %}
